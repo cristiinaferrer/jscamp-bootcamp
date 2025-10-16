@@ -1,1 +1,172 @@
-<!-- Aquí el contenido de tu página empleos.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>DevJobs - Empleo</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Encuentra las mejores ofertas de trabajo para desarrolladores en DevJobs.">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header>
+    <a href="/index.html" class="logo">
+        <h1>
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        DevJobs
+        </h1>
+    </a>    
+
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./empleos.html">Empleos</a>
+      <a href="./empresas.html">Empresas</a>
+      <a href="./salarios.html">Salarios</a>
+    </nav>
+
+    <div>
+      <a href="" class="button publish">Publicar un empleo</a>
+      <a href="" class="button">Iniciar sesión</a>
+    </div>
+  </header>
+
+
+  <main class="main-empleos">
+    <div class="hero">
+        <h2>Encuentra tu próximo trabajo</h2>
+        <p>Explora miles de ofertas en el sector tecnológico.</p>
+    </div>
+
+    <section class="buscador-empleo-y-filtros">
+        <form class="buscador-empleo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+            </svg>
+            <input type="text" placeholder="Buscar trabajos, empresas o habilidades" class="buscador-empleo-input"/>
+            <button type="submit" class="buscador-empleo-boton">Buscar</button>
+        </form>
+        <div class="filtros">
+            <div class="filtro-tecnologia">
+                <select id="tecnologia" class="filtro-tecnologia-select">
+                    <option value="" disabled selected>Tecnología</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </select>
+            </div>
+            <div class="filtro-ubicacion">
+                <select id="ubicacion" class="filtro-ubicacion-select">
+                    <option value="" disabled selected>Ubicación</option>
+                    <option value="remoto">Remoto</option>
+                    <option value="onsite">On-site</option>
+                </select>
+            </div>
+            <div class="filtro-tipo">
+                <select id="tipo" class="filtro-tipo-select">
+                    <option value="" disabled selected>Tipo de contrato</option>
+                    <option value="fulltime">Tiempo completo</option>
+                    <option value="parttime">Medio tiempo</option>
+                    <option value="contract">Contrato</option>
+                </select>
+            </div>
+            <div class="filtro-experiencia">
+                <select id="experiencia" class="filtro-experiencia-select">
+                    <option value="" disabled selected>Nivel de experiencia:</option>
+                    <option value="junior">Junior</option>
+                    <option value="mid">Mid-level</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    
+    <section class="resultados">
+        <h3>Resultados de búsqueda</h3>
+
+        <div class="resultados-list">
+            <article class="resultado-item">
+                <div class="resultado-item-left">
+                    <div class="resultado-item-titulo">Ingeniero de software</div>
+                    <div class="resultado-item-empresa">Tech Solutions Inc. | Remoto</div>
+                    <div class="resultado-item-desc">Buscamos un ingeniero de software con experiencia en desarrollo web.</div>
+                </div>
+                <div class="resultado-item-right">
+                    <div class="button button-aplicar">Aplicar</div>
+                </div>
+            </article>
+
+            <article class="resultado-item">
+                <div class="resultado-item-left">
+                    <div class="resultado-item-titulo">Desarrollador Frontend</div>
+                    <div class="resultado-item-empresa">Web Creators | On-site</div>
+                    <div class="resultado-item-desc">Únete a nuestro equipo como desarrollador frontend especializado en React.</div>
+                </div>
+                <div class="resultado-item-right">
+                    <div class="button button-aplicar">Aplicar</div>
+                </div>
+            </article>
+
+            <article class="resultado-item">
+                <div class="resultado-item-left">
+                    <div class="resultado-item-titulo">Administrador de Base de Datos</div>
+                    <div class="resultado-item-empresa">DataCorp | Remoto</div>
+                    <div class="resultado-item-desc">Se busca administrador de base de datos con experiencia en SQL y NoSQL.</div>
+                </div>
+                <div class="resultado-item-right">
+                    <div class="button button-aplicar">Aplicar</div>
+                </div>
+            </article>
+
+            <article class="resultado-item">
+                <div class="resultado-item-left">
+                    <div class="resultado-item-titulo">Desarrollador Backend</div>
+                    <div class="resultado-item-empresa">Backend Masters | On-site</div>
+                    <div class="resultado-item-desc">Estamos contratando un desarrollador backend con experiencia en Node.js y bases de datos.</div>
+                </div>
+                <div class="resultado-item-right">
+                    <div class="button button-aplicar">Aplicar</div>
+                </div>
+            </article>
+
+            <article class="resultado-item">
+                <div class="resultado-item-left">
+                    <div class="resultado-item-titulo">Ingeniero DevOps</div>
+                    <div class="resultado-item-empresa">Cloud Innovators | Remoto</div>
+                    <div class="resultado-item-desc">Buscamos un ingeniero DevOps con experiencia en AWS y automatización de infraestructuras.</div>
+                </div>
+                <div class="resultado-item-right">
+                    <div class="button button-aplicar">Aplicar</div>
+                </div>
+            </article>
+        </div>
+
+        <nav class="resultados-paginacion">
+            <a class="paginacion-anterior">&lt;</a>
+            <a class="paginacion-numero paginacion-activo">1</a>
+            <a class="paginacion-numero">2</a>
+            <a class="paginacion-numero">3</a>
+            <a class="paginacion-numero">4</a>
+            <a class="paginacion-numero">5</a>
+            <a class="paginacion-siguiente">&gt;</a>
+        </nav>
+        
+    </section>
+
+  </main>
+
+  <footer>
+    <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+  </footer>
+
+</body>
+
+</html>
